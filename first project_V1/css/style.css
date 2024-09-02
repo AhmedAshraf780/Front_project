@@ -1,0 +1,640 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+   height: 100%;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Header{
+   height:100px ;
+   width: 100%;
+   background-color: #1A4870;
+   overflow: hidden;
+   position: fixed;
+   z-index: 1000;
+}
+.Header-Links li{
+   list-style: none;
+   margin: 30px 20px;
+   color: #F9DBBA;
+   font-size: 24px;
+   float: right;
+   cursor: pointer;
+   position: relative;
+}
+.Logo{
+   height: 100px;
+   width: 100px;
+   background-image: url(../Images/WhatsApp\ Image\ 2024-08-20\ at\ 12.36.04\ AM.jpeg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   float: left;
+   margin-left: 25px;
+   border-radius: 10px;
+}
+
+
+
+.Header-Links li::after {
+    content: ""; /* Required to generate the pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust to position the underline just below the text */
+    height: 2px; /* The thickness of the underline */
+    width: 0; /* Start with a width of 0 to animate it */
+    background-color: #5B99C2; /* The color of the underline */
+    transition: width 0.3s ease; /* Smooth transition for the underline */
+}
+
+.Header-Links li:hover::after {
+    width: 100%; /* Expand the underline to the full width of the text on hover */
+}
+.Intro-Background{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   background-repeat: no-repeat;
+   background-image: url(../Images/rm218-bb-07.jpg);
+   background-size: cover;
+}
+.Intro-Background::after{
+   width: 100%;
+   content: "";
+   height: 100vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: black;
+   opacity: 0.7;
+}
+.Intro-Section{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   z-index: 10;
+}
+.Intro-Section h2{
+   font-size: 70px;
+   word-spacing: 10px;
+   color: white;
+   text-transform: uppercase;
+}
+.Intro-Section p{
+   font: 20px;
+   text-transform: capitalize;
+   color: #F9DBBA;
+   padding: 20px 0;
+}
+.Intro-Section button{
+   padding: 20px 40px;
+   font-size: 20px;
+   text-align: center;
+   border: 0;
+   border-radius: 10px;
+   margin: 0 10px;
+}
+.Learnmore{
+   background-color: #1A4870;
+}
+.Intro-Section button:hover{
+   opacity: 0.7;
+}
+.section2{
+   padding: 120px 0px;
+   height: 500px;
+}
+.header-section2{
+   text-align: center;
+}
+.Title-section2{
+   font-size: 40px;
+   text-transform: capitalize;
+   margin: 5px 0;
+}
+.underline{
+   width: 62px;
+   height: 5px;
+   margin: 0 auto 55px auto;
+   background-color: #1A4870;
+}
+.container-section2{
+   width: 80%;
+   margin: auto;
+}
+.item-section2{
+   text-align: center;
+   height: 150px;
+   width: 30%;
+   float: left;
+   border: 1px  solid #1A4870;
+   border-radius: 10px;
+   position: relative;
+}
+.item-section2 i{
+   padding: 10px 0;
+   color: #1A4870;
+   cursor: pointer;
+}
+.midsection{
+   margin: 0 25px;
+}
+.readmore{
+   color: #1A4870;
+   cursor: pointer;
+   margin: 12px 0;
+   text-transform: capitalize;
+}
+.item-section2 h2{
+   text-transform: capitalize;
+   margin: 5px 0;
+}
+.item-section2 p{
+   word-spacing: 3px;
+   font-weight: 200;
+}
+.client{
+   margin-left: -190px;
+}
+.goshop{
+   margin: 30px;
+}
+.item-section2::after{
+   position: absolute;
+   content: "";
+   top: 0;
+   left: 0;
+   width: 0%;
+   height: 0%;
+   opacity: 0;
+   background-color: black;
+   border-radius: 10px;
+}
+.item-section2:hover::after{
+   width: 100%;
+   height: 100%;
+   opacity: 0.7;
+   transition: 0.2s ease;
+   z-index: -5;
+}
+.item-section2:hover h2{
+   color: rgb(255, 255, 255);
+   opacity: 1;
+}
+.section3{
+   padding: 120px 0;
+   height: 500px;
+}
+.container-section3{
+   width: 80%;
+   margin: auto;
+}
+.container-section3 div{
+   width: 30%;
+   position: relative;
+   float: left;
+   height: 410px;
+   border: 1px solid #1A4870;
+   text-align: center;
+   border-radius: 10px;
+   margin: 5px 15px;
+   box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
+}
+.container-section3 div img{
+   width: 50%;
+   
+}
+.item1{
+   padding: 20px 10px;
+}
+.item3{
+   padding:40px 0 ;
+}
+.item4{
+   padding: 90px 10px;
+   
+}
+.container-section3 div::after {
+    position: absolute;
+    content: "ثلاجه\A\A\A 70*80*150"; /* The text content */
+    text-align: center;
+    bottom: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, 50%); /* Adjust for exact center alignment */
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    opacity: 0; /* Initially hidden */
+    background-color: black;
+    border-radius: 10px;
+    font-size: 50px;
+    color: #fff;
+    display: flex; /* Enable flexbox layout */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    white-space: pre;
+}
+.container-section3 div:hover::after{
+   width: 100%;
+   height: 100%;
+   opacity: 0.7;
+   transition: 0.3s ease-in;
+}
+.section4{
+   margin: 700px 0;
+}
+.header-section4{
+   margin: 20px 0;
+}
+.header-section4 h2{
+   font-size: 40px;
+   text-transform: capitalize;
+   margin: 8px 0;
+   text-align: center;
+}
+
+.container-section4{
+   width: 80%;
+   margin: auto;
+}
+.item-section4{
+   position: relative;
+   float: left;
+   width: 30%;
+   height: 150px;
+   margin: 15 15px;
+   border: 1px solid #1A4870;
+   border-radius: 10px;
+   box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
+}
+.item-section4 h2{
+   text-align: center;
+   padding: 20px 0;
+   font-size: 23px;
+   z-index: 15;
+}
+.item-section4 h2 i{
+   color: #1A4870;
+   z-index: 15;
+}
+.item-section4::after{
+   position: absolute;
+   z-index: -25;
+   content: "";
+   top: 0;
+   left: 0;
+   width: 0%;
+   height: 0%;
+   opacity: 0;
+   background-color: black;
+   border-radius: 10px;
+}
+.item-section4 p{
+   text-align: center;
+   font-weight: 400;
+   text-transform: capitalize;
+   z-index: 15;
+   color: black;
+}
+.item-section4:hover  h2,
+.item-section4:hover p{
+   color: white;
+}
+.item-section4:hover::after{
+   width: 100%;
+   height: 100%;
+   opacity: 0.8;
+   transition: 0.3s ease-in-out;
+}
+
+.header-section3 h2{
+   padding: 0 10%;
+   text-transform: capitalize;
+   font-size: 35px;
+}
+.header-section3 div{
+   margin-left: 300px;
+}
+.paragraph{
+   padding: 50px 10%;
+   font-size: 18px;
+   margin-top: -50px;
+   display: inline-block;
+}
+.paragraph i{
+   color: green;
+}
+.paragraph p{
+   padding: 5px 0;
+}
+.first{
+   margin-top: -50px;
+   line-height: 50px;
+}
+.image{
+   float: right;
+   margin: -100px 15% 10px 0;
+   border-radius: 15px;
+}
+.image i{
+   margin: 5px 5px;
+}
+.section6 {
+    height: 300px;
+    margin: 120px 0;
+    background-image: url(../../../Downloads/nyc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden; /* Ensures child elements do not overflow */
+}
+
+.section6::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect to change opacity */
+.section6:hover::after {
+    opacity: 0.9; /* Adjust opacity on hover */
+}
+
+.container-section6 {
+   width: 80%;
+   margin: 0 auto; /* Center the container itself within its parent */
+   display: flex; /* Enable Flexbox */
+   justify-content: center; /* Center items horizontally */
+   flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+.item-section6 {
+   width: 20%; /* Width of each item */
+   margin: 120px 20px; /* Optional: Adds space between items */
+   text-align: center;
+   color: #F9DBBA;
+   z-index: 50;
+   position: relative;
+}
+.item-section6 i{
+   transform: scale(1.5);
+   padding: 15px 0;
+   color: #1A4870;
+   z-index: 50;
+   position: relative;
+}
+.item-section6 p{
+   text-transform: capitalize;
+   font-weight: bold;
+   padding: 10px 0;
+}
+.container-section7{
+   width: 80%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.item-section7{
+   text-align: center;
+   margin: 0 100px;
+   width: 20%;
+   height: 300px;
+   border: 1px solid #1A4870;
+   border-radius: 10px;
+   position: relative;
+}
+.item-section7 h2{
+   padding: 15px 0;
+   text-transform: capitalize;
+   z-index: 15;
+}
+.circle{
+   border: 1px solid #1A4870;
+   border-radius: 100%;
+   width: 75px;
+   height: 75px;
+   text-align: center;
+   padding: 10px 0;
+   margin: 0 110px;
+   z-index: 15;
+}
+.item-section7 p{
+   padding: 15px 0;
+   text-transform: capitalize;
+}
+.item-section7 button{
+   border-radius: 15px;
+   padding: 10px 15px;
+   text-transform: capitalize;
+   font-size: 15px;
+   border: 1px solid #1A4870;
+   position: relative;
+   z-index: 15;
+   transition: background-color 0.2s ease, color 0.2s ease; /* Add transition to default state */
+}
+.item-section7 button:hover{
+   color: white;
+   background-color: #1A4870;    
+}
+.item-section7::after{
+   position: absolute;
+   content: "";
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 0%;
+   opacity: 0;
+   background-color: black;
+   border-radius: 10px;
+   z-index: -15;
+}
+.item-section7:hover::after{
+   height: 100%;
+   opacity: 0.7;
+   transition: 0.3s ease-in-out;
+}
+.item-section7:hover h2,
+.item-section7:hover .circle{
+   color: white;
+}
+.section8{
+   margin: 300px 0;
+   height: 300px;
+   background-image: url(../Images/nyc2.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   overflow: hidden;
+   
+}
+.container-section8{
+   width: 80%;
+   margin: 0 auto;
+}
+.container-section8 div{
+   width: 50%;
+   float: left;
+}
+.ashraf img , .mostafa img{
+   border-radius: 100%;
+   display: inline-block;
+   position: relative;
+   z-index: 10;
+}
+.ashraf div h2 , .mostafa div h2{
+   color: #fff;
+   font-size: 18px;
+   font-weight: 600;
+   margin: 5px 0;
+}
+.ashraf , .mostafa{
+   margin: 100px 0;
+}
+.ashraf div , .mostafa div{
+   display: inline-block;
+   float: right;
+   margin-right: 150px;
+   margin-top: 20px;
+   color: #F9DBBA;
+   z-index: 10;
+   position: relative;
+}
+.section8::after{
+   position: absolute;
+   content: "";
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   opacity: 0.7;
+   z-index: 5;
+}
+.container-section9{
+   width: 80%;
+   margin: 120px auto;
+}
+.member {
+  width: 30%;
+  float: right;
+  border: 1px solid #1A4870;
+  border-radius: 10px;
+  margin: 10px 20px;
+  height: 350px;
+  position: relative; /* Position relative to place the image and icons inside */
+  overflow: hidden; /* Ensures content doesn't overflow the div */
+  text-align: center;
+
+}
+
+.icons {
+  width: 50px;
+  text-align: center;
+  margin: 64px 45px;
+  background-color: #1A4870;
+  position: absolute; /* Allows positioning inside the parent div */
+  right: 0; /* Aligns icons to the left */
+  top: 0; /* Vertically centers icons */
+  transform: translateY(-50%); /* Adjusts for true vertical centering */
+  visibility: hidden; 
+  z-index: 5;  
+}
+
+.member img {
+  width: 80%;
+  height: 200px;
+  margin: 20px 0;
+  z-index: 0;
+}
+
+.icons i {
+  display: block;
+  margin: 10px auto; /* Centers icons horizontally */
+  color: white;
+  transform: scale(1.5);
+}
+.member h2{
+   margin: 10px 0;
+   z-index: 15;
+   position: relative;
+}
+.member h3{
+   color: #1A4870;
+   font-size: 17px;
+   font-weight: 500;
+   position: relative;
+   z-index: 15;
+}
+.member::after{
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 0;
+   top: 0;
+   right: 0;
+   background-color: black;
+   opacity: 0;
+   z-index: 2;
+}
+.member:hover::after{
+   height: 100%;
+   opacity: 0.7;
+   transition: 0.2s ease;
+}
+.member:hover .icons{
+   visibility: visible;
+}
+.member:hover h2{
+   color: white;
+}
+.member:hover h3{
+   color: green;
+}
+.footer{
+   margin: 700px 0;
+   width: 100%;
+   height: 200px;
+   background-color: #1A4870;
+   position: relative;
+}
+.footer-icons i{
+   transform: scale(2);
+   margin: 0 10px;
+   color: #e1e8ee;
+   cursor: pointer;
+}
+.footer-icons i:hover{
+   color: #5B99C2;
+   transform: scale(2.2);
+}
+.footer-icons{ 
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   color: white;
+}
+.footer h2{
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   color: white;
+   margin: 70px 0;
+   font-size: 13px;
+   font-weight: 200;
+}
+
+
+
+
+
+
